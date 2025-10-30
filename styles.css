@@ -89,3 +89,40 @@ h1 {
     margin-bottom: 15px;
     border: 3px solid #007bff; /* Optional: A nice accent border (a vivid blue) */
 }
+
+/* --- 5. Light Mode Overrides (for the JavaScript toggle) --- */
+
+/* When the body has the class 'light-mode' applied, change these properties */
+body.light-mode {
+    background-color: #e0e0e0; /* Off-white background */
+    color: #333333;           /* Dark text */
+}
+
+/* Change the color of the card when in light mode */
+.light-mode .card {
+    background-color: #ffffff; /* White card background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Lighter shadow */
+}
+
+/* Change the button's appearance in light mode for better contrast */
+.light-mode #mode-toggle {
+    background-color: #f0f0f0;
+    color: #1a1a1a;
+    border: 1px solid #cccccc;
+}
+
+/* Adjust specific elements for light mode */
+.light-mode h1 {
+    color: #1a1a1a; /* Dark text for headings in light mode */
+}
+
+.light-mode .location {
+    color: #555555; /* Slightly darker grey for location in light mode */
+}
+.light-mode .motto {
+    color: #666666; /* Slightly darker grey for motto in light mode */
+}
+
+.light-mode .skills-list h2 {
+    border-bottom: 1px solid #bbbbbb; /* Lighter border for skills header */
+}
