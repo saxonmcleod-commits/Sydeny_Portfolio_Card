@@ -1,0 +1,91 @@
+/* --- 1. Global Setup (Dark Mode) --- */
+
+/* The asterisk (*) is a universal selector, applying to everything */
+* {
+    /* Sets the box model for consistent sizing (a web dev best practice!) */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the whole page (the <body>) */
+body {
+    /* Deep, soft black background (less harsh than pure #000000) */
+    background-color: #1a1a1a; 
+    
+    /* Off-white text color */
+    color: #e6e6e6; 
+    
+    /* Center the card in the middle of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures it takes up the full height of the screen */
+    
+    /* Set a nice, clean font */
+    font-family: Arial, sans-serif;
+}
+
+/* --- 2. The Portfolio Card (The .card class from your HTML) --- */
+
+.card {
+    background-color: #262626; /* A slightly lighter shade of black for the card */
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px; /* Smooth, rounded corners for a modern look */
+    text-align: center;
+    
+    /* Subtle 3D effect (common in dark-mode UIs) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+}
+
+/* --- 3. Content Styling --- */
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #ffffff; /* Pure white for the name to stand out */
+}
+
+.location {
+    color: #888888; /* Grey for secondary text */
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.motto {
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.skills-list h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444444;
+    padding-bottom: 5px;
+}
+
+.skills-list ul {
+    list-style: none; /* Removes the bullet points */
+    text-align: left;
+    padding-left: 20px;
+}
+
+.skills-list li {
+    padding: 5px 0;
+    font-size: 15px;
+}
+/* --- 4. Image Styling --- */
+
+.card img {
+    width: 150px;       /* Sets the width of the image */
+    height: 150px;      /* Sets the height of the image */
+    border-radius: 50%; /* Makes the image perfectly round */
+    object-fit: cover;  /* Ensures the image fills the circle without stretching */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #007bff; /* Optional: A nice accent border (a vivid blue) */
+}
